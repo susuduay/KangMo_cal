@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": "page-index",
+      "title": "饰品抗魔计算器",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1752605200000,
+      "canvasData": {
+        "x": 0,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/index.html",
+        "interactions": []
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": true,
+    "deviceType": "desktop",
+    "projectName": "饰品抗魔计算器"
+  }
+}
