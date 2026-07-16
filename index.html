@@ -600,8 +600,11 @@ body {
       }
 
       function calcPieceTotal(base, level) {
-        // ROUNDUP(base * (1 + 0.05*level), 0)
-        return Math.ceil(base * (1 + 0.05 * level));
+          const b = BigInt(Math.round(Number(base) || 0));
+          const l = BigInt(Math.round(Number(level) || 0));
+          if (b <= 0n || l <= 0n) return Number(b);
+          const bonus = (b * l + 19n) / 20n;  // 精确 ceil 除法
+          return Number(b + bonus);
       }
 
       // ---- Render equipment rows ----
